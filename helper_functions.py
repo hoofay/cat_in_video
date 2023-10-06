@@ -151,9 +151,9 @@ def is_in_video(class_id,threshold,results):
 
 def keep_video(criteria,results):
     decision = False
-    for i in my_criteria.index:
-        print('checking ' + str(my_criteria.iloc[i,1]))
-        if is_in_video(my_criteria.iloc[i,0],my_criteria.iloc[i,2],results_df):
+    for i in criteria.index:
+        print('checking ' + str(criteria.iloc[i,1]))
+        if is_in_video(criteria.iloc[i,0],criteria.iloc[i,2],results_df):
             decision = True
             print(True)
         else:
