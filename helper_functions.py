@@ -153,7 +153,7 @@ def keep_video(criteria,results):
     decision = False
     for i in criteria.index:
         print('checking ' + str(criteria.iloc[i,1]))
-        if is_in_video(criteria.iloc[i,0],criteria.iloc[i,2],results_df):
+        if is_in_video(criteria.iloc[i,0],criteria.iloc[i,2],results):
             decision = True
             print(True)
         else:
