@@ -22,7 +22,7 @@ def load_model(model_path):
 
 # get videos from a directory
 def get_videos(directory):
-    directory = 'test_videos_to_process'
+    directory = directory
     video_files = glob.glob(os.path.join(directory, '*.mp4'))
     return video_files
 
